@@ -1,0 +1,12 @@
+zcat inputfile.csv.gz | awk -v OFS=',' '
+BEGIN { FS = OFS; }
+NR == FNR { 
+    # Load IDs from the ID file into an array
+    id[$1] = 1; 
+    next; 
+}
+# Now process the main CSV data
+$1 in id && $2 ~ /^(INPAT|OUTPAT|OPER_IN|OPER_OUT|PRIM_OUT|CANC|PURCH)$/ {
+    print $1, $2, $3, $4, $5, $14;
+}
+' /media/volume/mferro/scripts/CCI/idfile.csv - | gzip > /media/volume/mferro/data/CCI/longitudinal_adherence_statins_all.csv.gz
