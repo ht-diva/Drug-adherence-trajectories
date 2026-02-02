@@ -1,6 +1,11 @@
 # Drug-adherence-trajectories
 
-Pipelines (Finregistry / Finland and Regione Lombardia / Italy) to construct long-term medication purchase histories, compute adherence time-series (e.g., MPR), smooth trajectories, and run functional trajectory modelling with downstream clustering and association analyses.
+Analysis code for the manuscript "Longitudinal patterns and determinants of statin adherence in over one million individuals from Finland and Italy" -  Andrea Corbetta, Katherine M. Logan, Matteo Ferro, Luisa Zuccolo, Markus Perola, Andrea Ganna, Emanuele Di Angelantonio, Francesca Ieva
+(medRxiv 2026.01.26.26344722; doi: https://doi.org/10.64898/2026.01.26.26344722)
+--- 
+
+Pipelines (Finregistry / Finland and Regione Lombardia / Italy) to construct long-term medication purchase histories, compute adherence time-series (e.g., MPR), smooth trajectories, and 
+run functional trajectory modelling with downstream clustering and association analyses.
 
 > **Important:** This repository contains code only. The underlying registry data are not included. Many scripts use environment-specific/hard-coded paths that you will need to adapt.
 
